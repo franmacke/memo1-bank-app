@@ -1,7 +1,7 @@
 package com.aninfo.model;
 
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,7 +17,7 @@ public class Account {
     private List<Transaction> transactions;
 
     public Account(){
-        this.transactions = null;
+        this.transactions = new ArrayList<>();
     }
 
     public Account(Double balance) {

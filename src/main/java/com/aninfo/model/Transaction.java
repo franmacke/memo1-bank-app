@@ -25,6 +25,7 @@ public class Transaction {
         this.amount = amount;
     };
 
+    public int getId() { return this.id; }
     public String getType() { return this.transactionType; }
 
     public Double getAmount() { return this.amount; }
