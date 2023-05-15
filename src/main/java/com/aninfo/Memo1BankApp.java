@@ -92,6 +92,11 @@ public class Memo1BankApp {
 		return ResponseEntity.of(transactionService.getTransaction(id));
 	}
 
+	@DeleteMapping("/transaction/{id}")
+	public void deleteTransaction(@PathVariable int id) {
+		transactionService.deleteTransaction(id);
+	}
+
 
 	@Bean
 	public Docket apiDocket() {

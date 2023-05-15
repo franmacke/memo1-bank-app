@@ -25,4 +25,8 @@ public class TransactionService {
     public Optional<Transaction> getTransaction(int id) {
         return transactionRepository.findById(id);
     }
+
+    public void deleteTransaction(int id) {
+        transactionRepository.deleteById(id);
+    }
 }
